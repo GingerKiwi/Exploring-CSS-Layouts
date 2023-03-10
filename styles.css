@@ -125,7 +125,9 @@ body {
 main {
     display: grid;
     gap: 2rem;
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
     max-width: 80vw;
     /* border: 2px green solid; */
 }
@@ -134,4 +136,5 @@ article {
     /* border: red solid 2px; */
     border-radius: 10px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding: 1.25rem;
 }
